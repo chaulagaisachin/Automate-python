@@ -9,9 +9,9 @@ def ip():
     # First network adaptor
     nic = nic_configs[2]
     print(nic)
-    ip = u'192.168.6.5'
-    subnetmask = u'255.255.255.248'
-    gateway = u'192.168.6.1'
+    ip = u'192.168.6.5' # Chanage the ip you want in your adapter
+    subnetmask = u'255.255.255.248' # Chanage the subnet you want in your adapter
+    gateway = u'192.168.6.1' # Chanage the ip gateway you want in your adapter
     nic.EnableStatic(IPAddress=[ip], SubnetMask=[subnetmask])
     nic.SetGateways(DefaultIPGateway=[gateway])
 def dhcp():
